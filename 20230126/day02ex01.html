@@ -1,3 +1,4 @@
+<!-- box moving -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
             width: 100px;
             height: 100px;
             background-color: yellow;
-            border: 2px solid red;
+            border: 2px solid blue;
             /* left는 요소가 레이어여야 적용된다. postion */
             position: absolute;
             left: 0px;
@@ -49,7 +50,7 @@
         // playBtnArr[2].y = 200;
         // playBtnArr[3].x = 200;
         // playBtnArr[3].y = 200;
-        //var posArr = [ [0,0],[200,0],[0,200],[200,200] ];
+        //var posArr = [[0,0],[200,0],[0,200],[200,200]];
         var posArr = [{x:0, y:0},{x:200, y:0},{x:0, y:200},{x:200, y:200}];
         for(var cnt=0; cnt<playBtnArr.length; cnt++) {
             playBtnArr[cnt].x = posArr[cnt].x;
